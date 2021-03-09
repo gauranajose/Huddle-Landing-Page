@@ -1,0 +1,260 @@
+:root {
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --primary-txt-color: #00252E;
+    --secondary-text-color: #bebebe;
+    --btn-color: #FE52C0;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    align-items: center;
+    width: 100%;
+    font-family: var(--body-font);
+    color: var(--primary-txt-color);
+}
+
+h2, h3 {
+    font-family: var(--heading-font);
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+h2 { font-size: 24px; }
+
+p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding: 0 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.btn {
+    font-size: 11px;
+    font-weight: 600;
+    background: var(--btn-color);
+    width: fit-content;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 2px rgba(0,0,0,0.1) ;
+}
+
+.btn-trans {
+    font-size: 10px;
+    color: var(--btn-color);
+    background: transparent;
+    border: solid 1px var(--btn-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    box-shadow: none;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+nav img {
+    height: 15px;
+}
+
+/* Section Header */
+#header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#header h2 {
+    margin-bottom: 20px;
+}
+
+#header p {
+    margin-bottom: 40px;
+}
+
+#header + section {
+    margin-top: 100px;
+    height: 200px;
+}
+
+#header + section img {
+    width: 100%;
+}
+
+/* Section Numbers */
+#numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+}
+
+#numbers ul {
+    width: fit-content;
+}
+
+#numbers ul li {
+    padding-top: 20px;
+    position: relative;
+}
+
+#numbers ul li:first-of-type {
+    margin-bottom: 80px;
+}
+
+#numbers img {
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#numbers p { 
+    color: var(--secondary-text-color); 
+    font-weight: 500;
+}
+
+/* Section About */
+#about ul li {
+    padding-top: 150px;
+    padding-bottom: 200px;
+    position: relative;
+}
+
+#about ul li img {
+    padding: 0 60px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+#about ul li:nth-child(1) {
+    background-color: #F5FBFF;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#about ul li:nth-child(3) {
+    background-color: #F5FBFF;
+    padding-top: 0px;
+    padding-bottom: 100px;
+}
+
+#about ul li:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-size: 100% 100%;
+}
+
+#about ul li:nth-child(1):before {
+    background: url('images/bg-section-top-mobile-1.svg') no-repeat;
+    top: -100px;
+}
+
+#about ul li:nth-child(2):before {
+    background: url('images/bg-section-bottom-mobile-1.svg') no-repeat;
+    top: 0px;
+}
+
+#about ul li:nth-child(3):before {
+    background: url('images/bg-section-top-mobile-2.svg') no-repeat;
+    top: -100px;
+}
+
+/* Section Get Started */
+
+#get-started {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 300px;
+    position: relative;
+}
+
+#get-started:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-size: 100% 100%;
+    background: url('images/bg-section-bottom-mobile-2.svg') no-repeat;
+    top: 0px;
+}
+
+#get-started h2 {
+    margin-bottom: 40px;
+}
+
+/* Section Footer */
+#footer {
+    padding: 50px 20px;
+    color: #fff;
+    background: #00252D;
+    position: relative;
+}
+
+#footer:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-size: 100% 100%;
+    background: url('images/bg-footer-top-mobile.svg') no-repeat;
+    top: -50px;
+    left: 0;
+}
+
+#footer h3 {
+    font-family: var(--body-font);
+    font-size: 19px;
+    font-weight: 700;
+}
+
+#footer p {
+    padding: 20px 0;
+}
+
+#footer form > input:first-child {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#footer form > input:first-child:focus {
+    outline: none;
+}
+
+#footer form > input:last-child {
+    border: none;
+    font-size: 16px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+}
