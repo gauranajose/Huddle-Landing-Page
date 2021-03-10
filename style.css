@@ -408,6 +408,7 @@ nav img {
         justify-content: space-between;
         padding: 50px 60px;
         width: 100%;
+        position: relative;
     }
 
     #footer p {
@@ -431,6 +432,17 @@ nav img {
         margin-bottom: 0px;
         margin-right: 20px;
     }
+
+    #footer .attribution {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10px;
+        font-size: 11px; 
+        text-align: center;
+    }
+
+    #footer .attribution a { color: hsl(228, 45%, 44%); }
 }
 
 @media(min-width: 1440px) {
